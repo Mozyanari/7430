@@ -59,7 +59,8 @@ src/main.o: ../src/main.c \
  C:/Users/mozyanari74/workspace/f4_test/HAL_Driver/Inc/stm32f4xx_ll_usb.h \
  C:/Users/mozyanari74/workspace/f4_test/HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h \
  C:/Users/mozyanari74/workspace/f4_test/HAL_Driver/Inc/stm32f4xx_hal_hcd.h \
- C:/Users/mozyanari74/workspace/f4_test/Utilities/STM32F4xx-Nucleo/stm32f4xx_nucleo.h
+ C:/Users/mozyanari74/workspace/f4_test/Utilities/STM32F4xx-Nucleo/stm32f4xx_nucleo.h \
+ C:/Users/mozyanari74/workspace/f4_test/HAL_Driver/Inc/stm32f4xx_hal_uart.h
 
 C:/Users/mozyanari74/workspace/f4_test/CMSIS/device/stm32f4xx.h:
 
@@ -182,3 +183,5 @@ C:/Users/mozyanari74/workspace/f4_test/HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h:
 C:/Users/mozyanari74/workspace/f4_test/HAL_Driver/Inc/stm32f4xx_hal_hcd.h:
 
 C:/Users/mozyanari74/workspace/f4_test/Utilities/STM32F4xx-Nucleo/stm32f4xx_nucleo.h:
+
+C:/Users/mozyanari74/workspace/f4_test/HAL_Driver/Inc/stm32f4xx_hal_uart.h:

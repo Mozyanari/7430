@@ -1,19 +1,23 @@
-19:23:30 **** Incremental Build of configuration Debug for project f4_test ****
+22:41:48 **** Incremental Build of configuration Debug for project f4_gpio_test ****
 make all 
 Building file: ../src/main.c
 Invoking: MCU GCC Compiler
 %cd%
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DNUCLEO_F401RE -DSTM32F4 -DSTM32F401RETx -DSTM32 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -I"C:/Users/mozyanari74/workspace/f4_test/inc" -I"C:/Users/mozyanari74/workspace/f4_test/CMSIS/core" -I"C:/Users/mozyanari74/workspace/f4_test/CMSIS/device" -I"C:/Users/mozyanari74/workspace/f4_test/HAL_Driver/Inc/Legacy" -I"C:/Users/mozyanari74/workspace/f4_test/HAL_Driver/Inc" -I"C:/Users/mozyanari74/workspace/f4_test/Utilities/STM32F4xx-Nucleo" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-../src/main.c: In function 'main':
-../src/main.c:27:2: warning: implicit declaration of function 'uart3_printf' [-Wimplicit-function-declaration]
-  uart3_printf("Setup_finish");
-  ^
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DNUCLEO_F401RE -DSTM32F4 -DSTM32F401RETx -DSTM32 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -I"C:/Users/mozyanari74/workspace/f4_gpio_test/inc" -I"C:/Users/mozyanari74/workspace/f4_gpio_test/CMSIS/core" -I"C:/Users/mozyanari74/workspace/f4_gpio_test/CMSIS/device" -I"C:/Users/mozyanari74/workspace/f4_gpio_test/HAL_Driver/Inc/Legacy" -I"C:/Users/mozyanari74/workspace/f4_gpio_test/HAL_Driver/Inc" -I"C:/Users/mozyanari74/workspace/f4_gpio_test/Utilities/STM32F4xx-Nucleo" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
 Finished building: ../src/main.c
  
-Building target: f4_test.elf
+Building target: f4_gpio_test.elf
 Invoking: MCU G++ Linker
-arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\mozyanari74\workspace\f4_test\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -lm -o "f4_test.elf" @"objects.list"  
-src/main.o: In function `main':
-C:\Users\mozyanari74\workspace\f4_test\Debug/../src/main.c:27: undefined reference to `uart3_printf'
-collect2.exe: error: ld returned 1 exit status
-make: *** [f4_test.elf] Error 1
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\mozyanari74\workspace\f4_gpio_test\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -fno-exceptions -fno-rtti -lm -o "f4_gpio_test.elf" @"objects.list"  
+Finished building target: f4_gpio_test.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "f4_gpio_test.elf" "f4_gpio_test.bin"
+arm-none-eabi-size "f4_gpio_test.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2756	   1084	   1568	   5408	   1520	f4_gpio_test.elf
+ 
+22:41:53 **** Incremental Build of configuration Debug for project f4_gpio_test ****
+make all 
+make: Nothing to be done for `all'.
